@@ -1,5 +1,5 @@
 const prod = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  'process.env.BACKEND_URL': prod ? '/computer_vision' : ''
+  'process.env.BACKEND_URL': prod ? '/intelligent_humanoid_robotics' : ''
 }

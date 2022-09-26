@@ -12,6 +12,6 @@ module.exports = withMDX({
 
 const debug = process.env.NODE_ENV !== 'production'
 
-module.exports.assetPrefix = !debug ? '/computer_vision/' : '';
+module.exports.assetPrefix = !debug ? '/intelligent_humanoid_robotics/' : '';
 
 

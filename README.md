@@ -1,5 +1,3 @@
-# Computer Vision
+# Intelligent Humanoid Robotics
 
-This site includes information about my [computer vision](<http://jackybaltes.github.io/computer-vision>) class.
-
-
+This site includes information about my [intelligent humanoid robotics](<http://jackybaltes.github.io/intelligent-humanoid-robotics>) class.
