@@ -1,0 +1,19 @@
+<Note type="info">
+Initially, we will use a single rail as shown below.
+</Note>
+
+<Note type="warning">
+Initially, we will use a single rail as shown below.
+</Note>
+
+<div style={{padding: '1rem', backgroundColor: 'violet'}}>
+  Try and change the background color to `tomato`.
+</div>
+
+```js
+import Readme from './readme.md' // Assumes an integration is used to compile MDX -> JS.
+import {FancyLink} from './components/fancy-link.js'
+
+<Readme components={{a: FancyLink}} />
+```
+
