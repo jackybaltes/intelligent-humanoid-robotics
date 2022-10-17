@@ -1,5 +1,3 @@
-import '../css/erc_styles.css'
-
 import {MDXProvider} from '@mdx-js/react'
 
 const components = {
