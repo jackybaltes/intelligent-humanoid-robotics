@@ -4,10 +4,11 @@
 
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
+  options: {providerImportSource: '@mdx-js/react',  /* otherOptions… */}
 })
 
 module.exports = withMDX({
-  pageExtensions: ['js', 'jsx', 'mdx'],
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
 })
 
 const debug = process.env.NODE_ENV !== 'production'

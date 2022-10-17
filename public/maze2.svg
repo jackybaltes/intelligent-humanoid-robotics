@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="maze2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.6658951"
+     inkscape:cx="475.11995"
+     inkscape:cy="562.16025"
+     inkscape:window-width="3840"
+     inkscape:window-height="2120"
+     inkscape:window-x="-12"
+     inkscape:window-y="-12"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#d33a2e;stroke-width:10;stroke:#3c61bd;stroke-opacity:1;stroke-dasharray:none"
+       id="rect434"
+       width="180.90001"
+       height="256.18234"
+       x="14.549995"
+       y="20.408829" />
+    <g
+       id="g1299"
+       transform="translate(65.611765,-4.9762255)">
+      <g
+         id="g1266">
+        <rect
+           style="fill:#2ed32f;fill-opacity:1;stroke:none;stroke-width:10;stroke-dasharray:none;stroke-opacity:1"
+           id="rect1105"
+           width="30.494118"
+           height="30.17647"
+           x="24.141176"
+           y="30.335295" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="27.355019"
+         y="49.201767"
+         id="text1213"><tspan
+           sodipodi:role="line"
+           id="tspan1211"
+           style="stroke-width:0.264583"
+           x="27.355019"
+           y="49.201767">Start</tspan></text>
+    </g>
+    <g
+       id="g1351"
+       transform="translate(-69.864704,-108.43529)">
+      <rect
+         style="fill:#2ed32f;fill-opacity:1;stroke:none;stroke-width:10;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1105-3"
+         width="30.494118"
+         height="30.17647"
+         x="159.61765"
+         y="241.88823" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="163.60406"
+         y="260.94519"
+         id="text1213-2"><tspan
+           sodipodi:role="line"
+           id="tspan1211-3"
+           style="stroke-width:0.264583"
+           x="163.60406"
+           y="260.94519">Goal</tspan></text>
+    </g>
+    <path
+       style="fill:#3c61bd;fill-opacity:1;stroke:#3c61bd;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 125.31177,21.044118 V 279.13235"
+       id="path1355-1"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#3c61bd;fill-opacity:1;stroke:#3c61bd;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 84.599506,22.632351 V 280.72058"
+       id="path1355-1-0"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
