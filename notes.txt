@@ -17,3 +17,70 @@ import {FancyLink} from './components/fancy-link.js'
 <Readme components={{a: FancyLink}} />
 ```
 
+
+
+
+### Servo Control 
+
+First implement a program on the Raspberry PI to demonstrate control
+of the four RC servos. 
+
+Identify the maximum angles and home positions of your servos.
+
+Make sure that you keep your leg assembly light, so that you can move the
+hip given the RC servos.
+
+### Remote Control 
+
+Implement an application on the Raspberry PI to control the leg that
+you constructed. 
+
+Your application should be able to:
+
+  * change the angles of each of the four servos
+
+  * control the position and orientation of the hip of your leg
+
+You can use a combination of keyboard, mouse, touchscreen, or joystick to control
+your leg.
+
+Use manual control to move the ball from the Start position to the Goal position.
+
+## Challenge 2: Closed Loop Control of the One-Dimensional Marble Game 
+
+In this part of the challenge, we will simplify the maze to a single rail,
+which runs from the front to the back of your maze.
+
+<div style={{textAlign: 'center', width:'40%'}}>
+  <table>
+    <tr>
+      <td>
+        ![maze2][maze2]
+      </td>
+      </tr>
+      <tr>
+      <td>
+        A maze with a single rail for experiments in feedback control.
+      </td>
+    </tr>
+  </table>
+</div>
+
+[maze2]: ./maze2.svg
+
+<div style={{textAlign: 'center', width:'40%'}}>
+  <table>
+    <tr>
+      <td>
+        ![maze3][maze3]
+      </td>
+      </tr>
+      <tr>
+      <td>
+        A maze with a single rail for experiments in feedback control.
+      </td>
+    </tr>
+  </table>
+</div>
+
+[maze3]: ./maze3.svg
