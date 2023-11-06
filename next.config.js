@@ -3,9 +3,10 @@
 // (But you could use ES2015 features supported by your Node.js version)
 
 const withMDX = require('@next/mdx')({
-  output: 'export',
   extension: /\.mdx?$/,
-  options: {providerImportSource: '@mdx-js/react',  /* otherOptions… */}
+  options: {
+    providerImportSource: '@mdx-js/react', 
+  /* otherOptions… */}
 })
 
 module.exports = withMDX({
