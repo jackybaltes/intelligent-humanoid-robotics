@@ -3,6 +3,7 @@
 // (But you could use ES2015 features supported by your Node.js version)
 
 const withMDX = require('@next/mdx')({
+  output: 'export',
   extension: /\.mdx?$/,
   options: {providerImportSource: '@mdx-js/react',  /* otherOptions… */}
 })
@@ -14,5 +15,3 @@ module.exports = withMDX({
 const debug = process.env.NODE_ENV !== 'production'
 
 module.exports.assetPrefix = !debug ? '/intelligent_humanoid_robotics/' : '';
-
-

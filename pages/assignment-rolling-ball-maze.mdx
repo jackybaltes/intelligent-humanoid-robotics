@@ -1,17 +1,24 @@
 # Marble Game - Assignment 1
-# Deadline: 14th November 2022 - 23:59
+# Deadline: 27th November 2023 - 23:59
 
 ## Updates
 
-  1) Deadline was changed to 14th November 2022 - 23:59
-  1) The implementation of CMACS have been delayed to the 2nd assignment.
+1.) Page Opened, 6th Nov 2023.
 
 ## Introduction
 
 The goal of this assignment is to demonstrate your ability to control
-the position and orientation of the hip of your leg.
+the position and orientation of the hip of your leg or humanoid robot.
 
-You will demonstrate the control using a marble game. 
+You will demonstrate the control using a rolling ball/marble game.
+
+The assignment must be done in groups of no more than 2 students.
+
+## Construction 
+
+Your group can do the assignment using an Engineering Kit 2, OP-2, or OP-3
+humanoid robot available in the ERC lab.
+You can also decide to build your own robot leg.
 
 ## Challenge 1: Open-Loop Control of the Two-Dimensional Marble Game
 
@@ -55,24 +62,24 @@ the maze.
 
 ### Servo Control 
 
-First implement a program on the Raspberry PI to demonstrate control
-of the four RC servos. 
+First implement a program to demonstrate control
+of the leg and hip of your humanoid robot. 
 
 Identify the maximum angles and home positions of your servos.
 
-Make sure that you keep your leg assembly light, so that you can move the
+If you built your own robot leg, make sure that you keep your 
+leg assembly light, so that you can move the
 hip given the RC servos.
 
 ### Remote Control 
 
-Implement an application on the Raspberry PI to control the leg that
-you constructed. 
+Implement an application  to control the angles of the joints. 
 
 Your application should be able to:
 
-  * change the angles of each of the four servos
+  * change the angles of each of at least four servos
 
-  * control the position and orientation of the hip of your leg
+  * control the position and orientation of the hip of your leg.
 
 You can use a combination of keyboard, mouse, touchscreen, or joystick to control
 your leg.
@@ -81,7 +88,7 @@ Use manual control to move the ball from the Start position to the Goal position
 
 ### Camera Feedback
 
-Mount the camera of the Raspberry PI so that you can watch your leg assembly
+Mount a webcam so that you can watch your leg assembly
 and the ball. 
 
 Implement a program for the camera. I suggest a simple blob/color detector 
@@ -116,14 +123,6 @@ which runs from the front to the back of your maze.
 
 [maze2]: ./maze2.svg
 
-## Challenge 3: Closed Loop Control of the Two-Dimensional Marble Game 
-
-In the third challenge, we extend our work to control the ball to balance
-on a plane in two dimensions.
-
-The maze is empty inside. The Start is at the top left and the goal is center of the
-playing field.
-
 ### Camera
 
 Modify your camera setup and vision application to estimate the position on the
@@ -132,25 +131,6 @@ top of the plane.
 ### PID Control
 
 Add and tune an additional PID controller so that you can balance on the plane.
-
-<div style={{textAlign: 'center', width:'40%'}}>
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          ![maze3][maze3]
-        </td>
-        </tr>
-        <tr>
-        <td>
-          A maze with a single rail for experiments in feedback control.
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-[maze3]: ./maze3.svg
 
 ## Honesty declaration
 
