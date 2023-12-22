@@ -1,0 +1,218 @@
+# Marble Game - Assignment 1
+# Deadline: 27th November 2023 - 23:59
+
+## Updates
+
+1.) Page Opened, 22nd Dec 2024.
+
+## Introduction
+
+The goal of this assignment is to investigate some preliminary ideas
+for a motion planner for a rock climbing robot.
+
+This assignment is only done in simulation, but we will host 
+the competition for physical robots during FIRA 2024.
+
+The assignment must be done in groups of no more than 2 students.
+
+## Motivation
+
+Rock climbing is an interesting and challenging problem for humans
+and robots. 
+
+Professional climbers are able to scale impressive boulders.
+
+```
+<iframe width="940" height="529" src="https://www.youtube.com/embed/s60x8SOIbko" title="🔥IFSC BOULDER Women&#39;s Final World Cup Bern 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+```
+
+I beleive it will be several decades before robots will match the skills of
+humans in this regard. Here is a video of one of our first attempts at a rock climbing
+robot.
+
+```
+<iframe width="940" height="705" src="https://www.youtube.com/embed/eRuzxQjPFdM" title="bioloid_climbing.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+```
+
+**Note that you only need to implement a simpile simulation of the robot
+to complete your motion planner.**
+
+## Challenge 1: 
+
+We would like to extend our previous work by adding several different types
+of holds, similar to the ones in a rock climbing gym.
+
+### Environment Setup 
+
+The field is a vertical wall of a given size (width * height). 
+Various holds are setup in that wall.
+
+We design three different holds that have different properties.
+
+```
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="holds.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.82938412"
+     inkscape:cx="397.28275"
+     inkscape:cy="561.8627"
+     inkscape:window-width="1844"
+     inkscape:window-height="1284"
+     inkscape:window-x="1423"
+     inkscape:window-y="336"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2"
+       transform="translate(-0.50720888,-0.85268653)">
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.284588"
+         id="rect1"
+         width="30"
+         height="30"
+         x="96.979591"
+         y="64.121368" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="96.022552"
+         y="108.78303"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="stroke-width:0.264583"
+           x="96.022552"
+           y="108.78303">Left</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="96.022552"
+           y="122.01215"
+           id="tspan2">Hold</tspan></text>
+    </g>
+    <g
+       id="g2-6"
+       transform="translate(-54.357463,-0.85268612)">
+      <g
+         id="g3">
+        <path
+           id="rect1-89"
+           style="fill:#00ff00;fill-rule:evenodd;stroke-width:0.284588"
+           d="m 126.97959,64.121368 v 30 H 96.979591 Z"
+           sodipodi:nodetypes="cccc" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="96.022552"
+           y="108.78303"
+           id="text1-2"><tspan
+             sodipodi:role="line"
+             id="tspan1-2"
+             style="stroke-width:0.264583"
+             x="96.022552"
+             y="108.78303">Center</tspan><tspan
+             sodipodi:role="line"
+             style="stroke-width:0.264583"
+             x="96.022552"
+             y="122.01215"
+             id="tspan2-4">Hold</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g2-8"
+       transform="translate(53.031588,-0.85268612)">
+      <path
+         id="rect1-8"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-width:0.284588"
+         d="m 96.979591,64.121368 29.999999,30 H 96.979591 Z"
+         sodipodi:nodetypes="cccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="96.022552"
+         y="108.78303"
+         id="text1-4"><tspan
+           sodipodi:role="line"
+           id="tspan1-1"
+           style="stroke-width:0.264583"
+           x="96.022552"
+           y="108.78303">Right</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="96.022552"
+           y="122.01215"
+           id="tspan2-9">Hold</tspan></text>
+    </g>
+  </g>
+</svg>
+```
+
+## Honesty declaration
+
+By submitting an assignment, you claim that your submission is only your own work. 
+This means that you have developed the design, implemented the code, run the experiments, 
+and all other work necessary to complete the assignment by yourself.
+
+If you discussed your work with other students or used sources on the Internet, then you **must**
+say so clearly at the beginning of the assignment.
+
+You can discuss parts of the assignment with others, but these discussions must be limited 
+to sharing ideas on a whiteboard or notepad. If you exchange code/programs/designs or 
+exchange any material via the Internet, then you must say so in your honesty declaration.
+
+Fill out the [Honesty Declaration](https://docs.google.com/document/d/1Z9FyOFt--OL_cqse55b-CifBgPDfFZi2L6-sUQBvZ4I/edit?usp=sharing) 
+and add any external sources that you used during the assignment.
+
+## Submissions
+
+This assignment must be done in groups of maximal two students. 
+
+If you use information or code that is not your own (e.g., sample code from the Internet, 
+ideas for new features from a classmate, etc.), then you must specify this in your assignment 
+write-up. Failure to disclose that you used external sources will lead to disciplinary actions.
+
+To hand in your assignment:
+
+  1) Create a directory to hold all of your data. The directory name should be \<student id\>_a\<number\>, 
+     where \<student id\> is your student id and \<number\> is the number of the assignment,
+  1) Create a directory source inside of the directory \<student id\>_a\<number\>. 
+  1) Put the source code, which may contain of multiple files, for your assignment’s solution 
+     into the directory source.
+  1) Your prg\ram must compile by just running the command make in the source directory or a 
+     similar step for your programming language of choice.
+  1) Write a README file to explain anything you feel is necessary or important about your 
+     submission. This may include special features/bugs of your program. Describe what parts 
+     of the assignment you implemented. It is in your interest to simplify the job of the marker.
+
+
+
+
+
+
+
+
+
