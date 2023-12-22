@@ -4,7 +4,7 @@
 
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
-  output: 'export',
+  output: "export",
   options: {
     providerImportSource: '@mdx-js/react', 
   /* otherOptions… */}
