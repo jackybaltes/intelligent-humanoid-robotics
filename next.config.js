@@ -5,10 +5,15 @@
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
   output: "export",
+  basePath: "/intelligent-humanoid-robotics",
+  images: {
+    unoptimized: true,
+  },
   options: {
     providerImportSource: '@mdx-js/react', 
   /* otherOptions… */}
-})
+  },
+)
 
 module.exports = withMDX({
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
