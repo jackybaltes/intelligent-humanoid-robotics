@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="holds.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.82938412"
+     inkscape:cx="396.67989"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1844"
+     inkscape:window-height="1284"
+     inkscape:window-x="1423"
+     inkscape:window-y="336"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2"
+       transform="translate(-0.50720888,-0.85268653)">
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd;stroke-width:0.284588"
+         id="rect1"
+         width="30"
+         height="30"
+         x="96.979591"
+         y="64.121368" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="96.022552"
+         y="108.78303"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="stroke-width:0.264583"
+           x="96.022552"
+           y="108.78303">Center</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="96.022552"
+           y="122.01215"
+           id="tspan2">Hold</tspan></text>
+    </g>
+    <g
+       id="g2-6"
+       transform="translate(-54.357463,-0.85268612)">
+      <g
+         id="g3">
+        <path
+           id="rect1-89"
+           style="fill:#00ff00;fill-rule:evenodd;stroke-width:0.284588"
+           d="m 126.97959,64.121368 v 30 H 96.979591 Z"
+           sodipodi:nodetypes="cccc" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="96.022552"
+           y="108.78303"
+           id="text1-2"><tspan
+             sodipodi:role="line"
+             id="tspan1-2"
+             style="stroke-width:0.264583"
+             x="96.022552"
+             y="108.78303">Right</tspan><tspan
+             sodipodi:role="line"
+             style="stroke-width:0.264583"
+             x="96.022552"
+             y="122.01215"
+             id="tspan2-4">Hold</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g2-8"
+       transform="translate(53.031588,-0.85268612)">
+      <path
+         id="rect1-8"
+         style="fill:#ff0000;fill-rule:evenodd;stroke-width:0.284588"
+         d="m 96.979591,64.121368 29.999999,30 H 96.979591 Z"
+         sodipodi:nodetypes="cccc" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="96.022552"
+         y="108.78303"
+         id="text1-4"><tspan
+           sodipodi:role="line"
+           id="tspan1-1"
+           style="stroke-width:0.264583"
+           x="96.022552"
+           y="108.78303">Left</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="96.022552"
+           y="122.01215"
+           id="tspan2-9">Hold</tspan></text>
+    </g>
+  </g>
+</svg>
