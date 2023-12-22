@@ -24,14 +24,14 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.82938412"
-     inkscape:cx="397.28275"
+     inkscape:cx="396.67989"
      inkscape:cy="561.25984"
      inkscape:window-width="1844"
      inkscape:window-height="1284"
      inkscape:window-x="1423"
      inkscape:window-y="336"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g3" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs1" />
   <g
@@ -85,7 +85,7 @@
              id="tspan1-2"
              style="stroke-width:0.264583"
              x="96.022552"
-             y="108.78303">Left</tspan><tspan
+             y="108.78303">Right</tspan><tspan
              sodipodi:role="line"
              style="stroke-width:0.264583"
              x="96.022552"
@@ -111,7 +111,7 @@
            id="tspan1-1"
            style="stroke-width:0.264583"
            x="96.022552"
-           y="108.78303">Right</tspan><tspan
+           y="108.78303">Left</tspan><tspan
            sodipodi:role="line"
            style="stroke-width:0.264583"
            x="96.022552"

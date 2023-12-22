@@ -73,8 +73,8 @@ We design three different holds that have different properties.
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.82938412"
-     inkscape:cx="397.28275"
-     inkscape:cy="561.8627"
+     inkscape:cx="396.67989"
+     inkscape:cy="561.25984"
      inkscape:window-width="1844"
      inkscape:window-height="1284"
      inkscape:window-x="1423"
@@ -107,7 +107,7 @@ We design three different holds that have different properties.
            id="tspan1"
            style="stroke-width:0.264583"
            x="96.022552"
-           y="108.78303">Left</tspan><tspan
+           y="108.78303">Center</tspan><tspan
            sodipodi:role="line"
            style="stroke-width:0.264583"
            x="96.022552"
@@ -134,7 +134,7 @@ We design three different holds that have different properties.
              id="tspan1-2"
              style="stroke-width:0.264583"
              x="96.022552"
-             y="108.78303">Center</tspan><tspan
+             y="108.78303">Right</tspan><tspan
              sodipodi:role="line"
              style="stroke-width:0.264583"
              x="96.022552"
@@ -160,7 +160,7 @@ We design three different holds that have different properties.
            id="tspan1-1"
            style="stroke-width:0.264583"
            x="96.022552"
-           y="108.78303">Right</tspan><tspan
+           y="108.78303">Left</tspan><tspan
            sodipodi:role="line"
            style="stroke-width:0.264583"
            x="96.022552"
@@ -170,6 +170,48 @@ We design three different holds that have different properties.
   </g>
 </svg>
 ```
+
+The center hold will support any contacts, whereas the left and right holds
+will only support if the robot is to the right or the left of the
+hold respectively.
+
+### Robot Model
+
+The robot is modeled as a rectangle of size 15cm * 20cm (for the torso).
+Arms and legs are mounted on the vertices of the rectangle.
+
+The arms
+and legs have a minimum length of 7cm and a maximum length of 14cm.
+The arms and legs can rotate 360 deg.
+
+In this assignment, we will only consider the kinematics of the robot.
+
+### Create a Bouldering Problem
+
+Implement a program to generate randomized bouldering environments by putting
+various holds onto a playing field.
+
+### Motion Planning
+
+We consider a position stable is the robot is able to hold at least three
+holds.
+
+Implement a path planner that can select a series of arms and leg motions
+and holds, so that the robot can climb up the wall.
+
+You can use standard weak methods in AI 
+(e.g., [depth first search](https://en.wikipedia.org/wiki/Depth-first_search), 
+[breadth first search](https://en.wikipedia.org/wiki/Breadth-first_search), 
+and [hill climbing](https://en.wikipedia.org/wiki/Hill_climbing))
+or a heuristic search method (A*).
+
+Another approach is to use [reinforcemenet learning](https://en.wikipedia.org/wiki/Reinforcement_learning).
+
+## Evaluation
+
+Implement at least two algorithms and compare their performance on
+a series of bouldering problems.
+
 
 ## Honesty declaration
 
