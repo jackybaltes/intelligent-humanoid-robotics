@@ -39,6 +39,12 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+      - name: Install package manager dependencies
+      - id: detect-package-manager
+        run: |
+            echo "manager=pnpm" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT
+            echo "runner=pnpm" >> $GITHUB_OUTPUT
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Restore cache
